@@ -9,7 +9,7 @@
 **Title:** Hospital Management System
 
 **Description:**  
-This project is a simple frontend application for managing hospital-related activities. It includes an admin login page, appointment booking form, and other essential functionalities. The project is built using HTML, CSS, JavaScript, and Bootstrap, providing a responsive and user-friendly interface. JavaScript is utilized for validating admin login and displaying success messages upon form submission.
+This project is a simple frontend application. It includes an admin login page, appointment booking form, and other essential functionalities. The project is built using HTML, CSS, JavaScript, and Bootstrap, providing a responsive and user-friendly interface. JavaScript is utilized for validating admin login and displaying success messages upon form submission.
 
 **Features:**
 - Admin login validation
