@@ -81,7 +81,9 @@
                 <fieldset>
                   <legend class="mb-4">Patient Information</legend>
                   <div class="mb-3">
-                    <label for="patientName" class="form-label">Full Name</label>
+                    <label for="patientName" class="form-label"
+                      >Full Name</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -91,7 +93,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="patientEmail" class="form-label">Email Address</label>
+                    <label for="patientEmail" class="form-label"
+                      >Email Address</label
+                    >
                     <input
                       type="email"
                       class="form-control"
@@ -101,7 +105,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="patientPhone" class="form-label">Phone Number</label>
+                    <label for="patientPhone" class="form-label"
+                      >Phone Number</label
+                    >
                     <input
                       type="tel"
                       class="form-control"
@@ -133,7 +139,9 @@
                           value="female"
                           required
                         />
-                        <label class="form-check-label" for="female">Female</label>
+                        <label class="form-check-label" for="female"
+                          >Female</label
+                        >
                       </div>
                       <div class="form-check form-check-inline">
                         <input
@@ -144,16 +152,20 @@
                           value="other"
                           required
                         />
-                        <label class="form-check-label" for="other">Other</label>
+                        <label class="form-check-label" for="other"
+                          >Other</label
+                        >
                       </div>
                     </div>
                   </div>
                 </fieldset>
-    
+
                 <fieldset>
                   <legend class="mb-4">Appointment Details</legend>
                   <div class="mb-3">
-                    <label for="appointmentDate" class="form-label">Appointment Date</label>
+                    <label for="appointmentDate" class="form-label"
+                      >Appointment Date</label
+                    >
                     <input
                       type="date"
                       class="form-control"
@@ -162,7 +174,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="appointmentTime" class="form-label">Appointment Time</label>
+                    <label for="appointmentTime" class="form-label"
+                      >Appointment Time</label
+                    >
                     <input
                       type="time"
                       class="form-control"
@@ -180,9 +194,11 @@
                     </select>
                   </div>
                 </fieldset>
-    
+
                 <div class="mb-3">
-                  <label for="additionalInfo" class="form-label">Additional Information</label>
+                  <label for="additionalInfo" class="form-label"
+                    >Additional Information</label
+                  >
                   <textarea
                     class="form-control"
                     id="additionalInfo"
@@ -190,7 +206,7 @@
                     placeholder="Any additional information or concerns"
                   ></textarea>
                 </div>
-    
+
                 <button type="submit" class="btn btn-primary" id="sub">
                   Submit Appointment
                 </button>
@@ -200,31 +216,44 @@
         </div>
       </div>
     </div>
-    
 
-    <div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 11">
-        <div id="loginToast" class="toast align-items-center text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body">
-                    Appointment Booking Successfully!!!
-                </div>
-                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+    <div
+      class="position-fixed top-0 start-50 translate-middle-x p-3"
+      style="z-index: 11"
+    >
+      <div
+        id="loginToast"
+        class="toast align-items-center text-bg-success"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Appointment Booking Successfully!!!</div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
+      </div>
     </div>
 
     <script>
-        document.getElementById("sub").addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent form submission
-        
-            // Show toast notification
-            const toastElement = document.getElementById("loginToast");
-            const toast = new bootstrap.Toast(toastElement);
-            toast.show();
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
 
-            setTimeout(() => {
-                document.getElementById('myForm').reset();
-            }, 3000);
+          // Show toast notification
+          const toastElement = document.getElementById("falseLoginToast");
+          const toast = new bootstrap.Toast(toastElement);
+          toast.show();
+
+          setTimeout(() => {
+            document.getElementById("myForm").reset();
+          }, 3000);
         });
     </script>
 
