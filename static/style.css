@@ -75,5 +75,6 @@
 
     .sec-3 .card-body img {
         height: 400px;
+        width: 100%;
     }
 }
