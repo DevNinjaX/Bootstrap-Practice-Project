@@ -65,6 +65,10 @@
         width: 100%;
     }
 
+    .sec-3 {
+        margin-left: 2px;
+    }
+
     .sec-3 .col {
         max-width: 100%;
     }
@@ -75,9 +79,5 @@
 
     .sec-3 .card-body img {
         height: 400px;
-    }
-
-    .row .sec-3 {
-        margin-left: 2px;
     }
 }
