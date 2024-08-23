@@ -35,7 +35,7 @@ This project is a simple frontend application. It includes an admin login page, 
 1. **Download or Clone the Project:**
    - You can download the project as a ZIP file or clone it using Git:
      ```bash
-     git clone https://github.com/your-repository/hospital-management-system.git
+     git clone [https://github.com/your-repository/hospital-management-system.git](https://devninjax.github.io/Bootstrap-Practice-Project/)
      ```
 2. **Navigate to the Project Directory:**
    - Open the project folder in your file explorer or code editor.
