@@ -28,6 +28,60 @@
     left: -50%;
 }
 
+/* list section */
+.list-1 {
+    background: #094cb0;
+    height: 360px;
+}
+
+.part-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.list-1 ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.list-1 ul h5 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.list-1 ul a {
+    text-decoration: none;
+    color: #dddddd;
+    margin: 3px 0;
+    font-size: 0.9rem;
+}
+
+.list-1 ul a:hover {
+    text-decoration: underline;
+}
+
+.list-1 hr {
+    border: 0;
+    height: 0.4px;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.part-2, .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part-2 .logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 840px) {
     .simg {
         height: 300px;
@@ -81,5 +135,9 @@
 
     .sec-3 .card-body img {
         height: 400px;
+    }
+
+    .list-1 {
+        height: 465px;
     }
 }
