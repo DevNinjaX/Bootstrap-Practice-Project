@@ -11,6 +11,15 @@ document.getElementById("btn").addEventListener("click", function (event) {
         // Display error message
         errorMessageElement.innerText = 'Invalid username or password. Please try again.';
         errorMessageElement.classList.add('show');
+    } else {
+        const toastElement = document.getElementById('loginToast');
+        const toast = new bootstrap.Toast(toastElement);
+        toast.show();
+
+        // Optional: Redirect after a short delay
+        setTimeout(() => {
+            window.location.href = '../index.html';
+        }, 2000);
     }
 
 });
