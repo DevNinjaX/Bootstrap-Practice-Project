@@ -63,12 +63,16 @@ Hospital Management System
 │
 ├── static/
 │   ├── style.css        # Main stylesheet
-│   └── form.js          # JavaScript for form validation
+│   ├── form.js          # JavaScript for form validation
+│   ├── login.js         # JavaScript for form validation
+│   └── signup.js        # JavaScript for form validation
 │
 ├── template/
-│   ├── admin.html       # Admin login page
+│   ├── admin.html       # Admin view page
+│   ├── adminlogin.html  # Admin login page
 │   ├── appointment.html # Appointment booking page
-│   └── form1.html       # Additional form page
+│   ├── login.html       # User login page
+│   └── signup.html      # User signup page
 │
 └── index.html           # Homepage (entry point)
 ```
