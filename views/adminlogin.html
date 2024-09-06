@@ -47,11 +47,13 @@
       </div>
     </div>
   </nav>
+
+  <!-- login form -->
   <div class="container p-5">
     <div class="col-md-4 offset-md-4">
       <div class="card paint-card">
         <div class="card-body">
-          <p class="fs-4 text-center">User Login</p>
+          <p class="fs-4 text-center">Admin Login</p>
 
           <!-- Error Message Container -->
           <div id="error-message" class="text-center text-danger"></div>
@@ -66,13 +68,9 @@
               <input type="password" name="password" class="form-control" id="password" />
             </div>
             <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-outline-primary" name="login" id="btn">
+              <button type="submit" class="btn btn-outline-primary mb-5" name="login" id="btn">
                 Login
               </button>
-            </div>
-            <div class="signup">
-              <p class="text-center mt-3">Don't have an account? <a href="./signup.html"
-                  class="text-decoration-none">Create one</a></p>
             </div>
           </form>
         </div>
@@ -86,15 +84,14 @@
       aria-atomic="true">
       <div class="d-flex">
         <div class="toast-body">
-          User login Successfully!!!
+          Admin login Successfully!!!
         </div>
         <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
   </div>
-
   <!-- raw script -->
-  <script src="../static/login.js"></script>
+  <script src="../static/form.js"></script>
 
   <!-- bootstrap script part -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

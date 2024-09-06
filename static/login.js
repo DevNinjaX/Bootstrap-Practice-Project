@@ -7,7 +7,7 @@ document.getElementById("btn").addEventListener("click", function (event) {
 
     const errorMessageElement = document.getElementById('error-message');
 
-    if (email != "user@gmail.com" || password != "user1234") {
+    if (email != "user@gmail.com" && password != "user1234") {
         // Display error message
         errorMessageElement.innerText = 'Invalid username or password. Please try again.';
         errorMessageElement.classList.add('show');

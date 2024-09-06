@@ -1,23 +1,28 @@
+/* slide image */
 .simg {
     max-width: 100%;
     height: 555px;
 }
 
+/* key features box */
 .paint-card {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     margin-top: 12px;
 }
 
+/* key fetures doctor img */
 .sec-2 .col-md-4 .card-body img {
     height: 360px;
 }
 
+/* our team doctor img */
 .sec-3 .card-body img {
     height: 370px;
     width: 100%;
     object-fit: cover;
 }
 
+/* footer */
 .card-footer {
     height: 52px;
     text-align: center;
@@ -70,7 +75,8 @@
     margin-top: 20px;
 }
 
-.part-2, .card-footer {
+.part-2,
+.card-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +88,19 @@
     font-weight: bold;
 }
 
+/* Initially hide the error message */
+#error-message {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition effect */
+}
+
+/* Show the error message smoothly */
+#error-message.show {
+    opacity: 1;
+}
+
+/* medium screen */
 @media only screen and (max-width: 840px) {
     .simg {
         height: 300px;
@@ -103,13 +122,14 @@
     .sec-3 .card {
         width: 340px;
     }
-    
+
     /* Admin Page */
     .dropdown-menu[data-bs-popper] {
         left: 0%;
     }
 }
 
+/* small device */
 @media only screen and (max-width: 440px) {
     .simg {
         height: 300px;
